@@ -1,33 +1,36 @@
 {
-  "name": "react-native-react-native-reachability-popup",
-  "title": "React Native React Native Reachability Popup",
-  "version": "1.0.0",
-  "description": "TODO",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/github_account/react-native-react-native-reachability-popup.git",
-    "baseUrl": "https://github.com/github_account/react-native-react-native-reachability-popup"
-  },
-  "keywords": [
-    "react-native"
-  ],
-  "author": {
-    "name": "Your Name",
-    "email": "yourname@email.com"
-  },
-  "license": "MIT",
-  "licenseFilename": "LICENSE",
-  "readmeFilename": "README.md",
-  "peerDependencies": {
-    "react": "^16.8.1",
-    "react-native": ">=0.59.0-rc.0 <1.0.x"
-  },
-  "devDependencies": {
-    "react": "^16.8.3",
-    "react-native": "^0.59.10"
-  }
+	"name": "react-native-reachability-popup",
+	"title": "React Native Reachability Popup",
+	"version": "1.0.0",
+	"description": "TODO",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/AlishahSolanki/react-native-reachability-popup.git",
+		"baseUrl": "https://github.com/AlishahSolanki/react-native-reachability-popup"
+	},
+	"keywords": [
+		"react-native"
+	],
+	"author": {
+		"name": "Alishah Solanki",
+		"email": "alishah.solanki@email.com"
+	},
+	"license": "MIT",
+	"licenseFilename": "LICENSE",
+	"readmeFilename": "README.md",
+	"peerDependencies": {
+		"react": "^16.8.1",
+		"react-native": ">=0.59.0-rc.0 <1.0.x"
+	},
+	"devDependencies": {
+		"react": "^16.8.3",
+		"react-native": "^0.59.10"
+	},
+	"dependencies": {
+		"@react-native-community/netinfo": "^5.3.3"
+	}
 }
