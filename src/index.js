@@ -1,6 +1,6 @@
 import ReachabilityManager from "./ReachabilityManager";
 import Reachability, { isNetworkReachable, isConnected } from "./Reachability";
 
-export { Reachability, isNetworkReachable, isConnected };
+export { isNetworkReachable, isConnected };
 
-export default Spinner;
+export default Reachability;

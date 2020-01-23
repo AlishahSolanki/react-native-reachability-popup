@@ -1,8 +1,15 @@
 import React, { Component } from "react";
-import { Text, Animated, TouchableWithoutFeedback, Easing } from "react-native";
+import {
+	Text,
+	Animated,
+	TouchableWithoutFeedback,
+	Easing,
+	Dimensions,
+	Platform
+} from "react-native";
 import NetInfo from "@react-native-community/netinfo";
-import { Metrics, Fonts } from "../theme";
 import ReachabilityManager from "./ReachabilityManager";
+const { width, height } = Dimensions.get("window");
 
 function srid() {
 	function s4() {
@@ -45,12 +52,12 @@ class Reachability extends Component {
 	movingMargin = this.animatedValue.interpolate({
 		inputRange: [0, 0.2, 0.4, 0.6, 0.8, 1],
 		outputRange: [
-			Metrics.screenWidth / 2 - 150,
-			Metrics.screenWidth / 2 - 150 - 20,
-			Metrics.screenWidth / 2 - 150 + 20,
-			Metrics.screenWidth / 2 - 150 - 20,
-			Metrics.screenWidth / 2 - 150 + 20,
-			Metrics.screenWidth / 2 - 150
+			width / 2 - 150,
+			width / 2 - 150 - 20,
+			width / 2 - 150 + 20,
+			width / 2 - 150 - 20,
+			width / 2 - 150 + 20,
+			width / 2 - 150
 		]
 	});
 	componentDidMount() {}
@@ -76,7 +83,7 @@ class Reachability extends Component {
 	}
 	animatedDown = () => {
 		Animated.timing(this.state.offsetX, {
-			toValue: Metrics.navBarHeight + 10
+			toValue: 88 + 10
 		}).start(() => {
 			setTimeout(() => {
 				Animated.timing(this.state.offsetX, {
@@ -151,8 +158,7 @@ class Reachability extends Component {
 						},
 						{ transform: [{ translateY: this.state.offsetX }] }
 					]}>
-					<Text
-						style={{ color: "#fff", fontSize: Fonts.Size.normal }}>
+					<Text style={{ color: "#fff", fontSize: 17 }}>
 						{this.state.isConnected == false
 							? this.state.isConnected + "No Internet Connection"
 							: this.state.isInternetReachable +
