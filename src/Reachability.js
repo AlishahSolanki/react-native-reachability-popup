@@ -89,7 +89,7 @@ class Reachability extends Component {
 				Animated.timing(this.state.offsetX, {
 					toValue: -40
 				}).start();
-			}, 10000);
+			}, 7000);
 		});
 	};
 	animatedUp = () => {
