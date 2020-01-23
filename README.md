@@ -1,4 +1,4 @@
-# react-native-react-native-reachability-popup
+# react-native-reachability-popup
 
 ## Getting started
 
