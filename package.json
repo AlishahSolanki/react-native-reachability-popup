@@ -1,7 +1,7 @@
 {
 	"name": "react-native-reachability-popup",
 	"title": "React Native Reachability Popup",
-	"version": "1.0.0",
+	"version": "1.0.4",
 	"description": "TODO",
 	"main": "src/index.js",
 	"types": "src/index.d.ts",
@@ -14,7 +14,13 @@
 		"baseUrl": "https://github.com/AlishahSolanki/react-native-reachability-popup"
 	},
 	"keywords": [
-		"react-native"
+		"reachability",
+		"popup",
+		"reachability-popup",
+		"react-native-reachability-popup",
+		"network",
+		"internet",
+		"netinfo"
 	],
 	"author": {
 		"name": "Alishah Solanki",
