@@ -160,10 +160,8 @@ class Reachability extends Component {
 					]}>
 					<Text style={{ color: "#fff", fontSize: 17 }}>
 						{this.state.isConnected == false
-							? this.state.isConnected + "No Internet Connection"
-							: this.state.isInternetReachable +
-							  "Network Unreachable"}
-						{/* {`${this.state.isConnected} No Internet Connection`} */}
+							? "No Internet Connection"
+							: "Network Unreachable"}
 					</Text>
 				</Animated.View>
 			</TouchableWithoutFeedback>
